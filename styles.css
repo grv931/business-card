@@ -1,0 +1,53 @@
+body {
+    margin: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.avatar {
+    width: 150px;
+    border: 1px solid #d8cefe;
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+}
+
+.avatar:hover {
+    transform: scale(1.1);
+}
+
+.card {
+    width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    background: #ddebf8;
+    color: #2b2839;
+    border: 1px solid #d8cefe;
+    border-radius: 10px;
+    box-shadow: 2px 4px 16px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    animation: fadeIn 1s ease-in-out;
+
+}
+
+.card:hover {
+    transform: scale(1.02);
+    box-shadow: 4px 8px 24px rgba(0, 0, 0, 0.2);
+}
+
+.border-blue {
+    border: 1px dotted blue;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
